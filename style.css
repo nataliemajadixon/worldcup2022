@@ -13,6 +13,50 @@
     width: 100%;
     height: 300px;
     object-fit: contain;
+    display: flex;
+    flex-direction: row;
+}
+
+.slideshow {
+    height: 70px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .slideshow > div {
+    height: 200px;
+    width: 2526px;
+    background: url(flag.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+  .slideshow .flags {
+    animation: moveSlideshow 12s linear infinite;
+  }
+ 
+  
+  
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
+
+
+
+#playerposter{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    float: left;
 }
 
 h1{
